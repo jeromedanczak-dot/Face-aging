@@ -1,0 +1,11 @@
+services:
+  face-aging-simulator:
+    build: .
+    container_name: face-aging-simulator
+    ports:
+      - "8000:8000"
+    environment:
+      - AGING_DIFFUSION_MODEL=timbrooks/instruct-pix2pix
+    volumes:
+      - ./uploads:/app/uploads
+      - ./outputs:/app/outputs

@@ -1,0 +1,4 @@
+release/
+frontend/node_modules/
+backend/.venv/
+outputs/*.zip
