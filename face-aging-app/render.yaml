@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: face-aging-simulator
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
